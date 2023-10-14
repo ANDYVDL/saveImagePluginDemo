@@ -1,0 +1,31 @@
+{
+  "api": {
+    "name": "saveimagePlugin",
+    "slug": "saveimageplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "saveBase64ToGallery",
+        "signature": "(options: { base64String: string; folderName: string; }) => Promise<{ base64String: string; folderName: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ base64String: string; folderName: string; }"
+          }
+        ],
+        "returns": "Promise<{ base64String: string; folderName: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "savebase64togallery"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
