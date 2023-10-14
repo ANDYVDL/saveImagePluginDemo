@@ -1,3 +1,3 @@
 export interface saveimagePlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  saveBase64ToGallery(options: { base64String: string, folderName: string }): Promise<{ base64String: string, folderName: string }>;
 }

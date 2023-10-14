@@ -13,24 +13,24 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`saveBase64ToGallery(...)`](#savebase64togallery)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### saveBase64ToGallery(...)
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+saveBase64ToGallery(options: { base64String: string; folderName: string; }) => Promise<{ base64String: string; folderName: string; }>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+| Param         | Type                                                       |
+| ------------- | ---------------------------------------------------------- |
+| **`options`** | <code>{ base64String: string; folderName: string; }</code> |
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ base64String: string; folderName: string; }&gt;</code>
 
 --------------------
 
