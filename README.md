@@ -14,6 +14,7 @@ npx cap sync
 <docgen-index>
 
 * [`saveBase64ToGallery(...)`](#savebase64togallery)
+* [`downloadFileFromURL(...)`](#downloadfilefromurl)
 
 </docgen-index>
 
@@ -31,6 +32,21 @@ saveBase64ToGallery(options: { base64String: string; folderName: string; }) => P
 | **`options`** | <code>{ base64String: string; folderName: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ base64String: string; folderName: string; }&gt;</code>
+
+--------------------
+
+
+### downloadFileFromURL(...)
+
+```typescript
+downloadFileFromURL(options: { url: string; }) => Promise<{ url: string; }>
+```
+
+| Param         | Type                          |
+| ------------- | ----------------------------- |
+| **`options`** | <code>{ url: string; }</code> |
+
+**Returns:** <code>Promise&lt;{ url: string; }&gt;</code>
 
 --------------------
 

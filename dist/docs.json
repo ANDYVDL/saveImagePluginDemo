@@ -20,6 +20,22 @@
         "docs": "",
         "complexTypes": [],
         "slug": "savebase64togallery"
+      },
+      {
+        "name": "downloadFileFromURL",
+        "signature": "(options: { url: string; }) => Promise<{ url: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ url: string; }"
+          }
+        ],
+        "returns": "Promise<{ url: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "downloadfilefromurl"
       }
     ],
     "properties": []

@@ -4,5 +4,8 @@ export class saveimageWeb extends WebPlugin {
         console.log('ECHO', options);
         return options;
     }
+    async downloadFileFromURL(options) {
+        return options;
+    }
 }
 //# sourceMappingURL=web.js.map

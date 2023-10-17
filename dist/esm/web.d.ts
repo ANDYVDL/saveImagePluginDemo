@@ -8,4 +8,9 @@ export declare class saveimageWeb extends WebPlugin implements saveimagePlugin {
         base64String: string;
         folderName: string;
     }>;
+    downloadFileFromURL(options: {
+        url: string;
+    }): Promise<{
+        url: string;
+    }>;
 }

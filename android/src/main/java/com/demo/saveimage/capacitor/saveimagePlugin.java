@@ -22,6 +22,7 @@ public class saveimagePlugin extends Plugin {
     public void load() {
         super.load();
         this.mContext = getContext();
+        FileDownloader.INSTANCE.initialize(mContext);
     }
     @PluginMethod
     public void saveBase64ToGallery(PluginCall call) {
@@ -45,5 +46,29 @@ public class saveimagePlugin extends Plugin {
             ret.put("isImageSaved", false);
             call.resolve(ret);
         }
+    }
+    @PluginMethod
+    public void downloadFileFromURL(PluginCall call) {
+        String fileUrl = call.getString("url");
+        JSObject ret = new JSObject();
+        FileDownloader.INSTANCE.downloadFile(this.mContext, fileUrl, new DownloadCallback() {
+            @Override
+            public void onDownloadComplete() {
+                ret.put("isDownloadComplete", true);
+                call.resolve(ret);
+            }
+
+            @Override
+            public void onDownloadFailed() {
+                ret.put("isDownloadComplete", false);
+                call.resolve(ret);
+            }
+            
+            @Override
+            public void onDownloadCancelled() {
+                ret.put("isDownloadComplete", false);
+                call.resolve(ret);
+            }
+        });
     }
 }

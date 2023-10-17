@@ -10,6 +10,9 @@ var capacitorsaveimage = (function (exports, core) {
             console.log('ECHO', options);
             return options;
         }
+        async downloadFileFromURL(options) {
+            return options;
+        }
     }
 
     var web = /*#__PURE__*/Object.freeze({

@@ -6,4 +6,9 @@ export interface saveimagePlugin {
         base64String: string;
         folderName: string;
     }>;
+    downloadFileFromURL(options: {
+        url: string;
+    }): Promise<{
+        url: string;
+    }>;
 }

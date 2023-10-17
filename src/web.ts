@@ -7,4 +7,8 @@ export class saveimageWeb extends WebPlugin implements saveimagePlugin {
     console.log('ECHO', options);
     return options;
   }
+
+  async downloadFileFromURL(options: { url: string}): Promise<{ url: string }> {
+    return options;
+  }
 }
