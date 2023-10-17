@@ -23,7 +23,7 @@ object FileDownloader {
 
     fun downloadFile(context: Context, fileUrl: String, downloadCallback: DownloadCallback) {
         val uri = Uri.parse(fileUrl)
-        val fileName = File(uri.path).name // Extract the filename from the URL
+        val fileName = "Clony-" + File(uri.path).name.substring(0,7) // Extract the filename from the URL
         val destinationDir = Environment.DIRECTORY_DOWNLOADS
         callback = downloadCallback
 
